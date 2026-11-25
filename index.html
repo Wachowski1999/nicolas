@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Same Moon · Moodboard</title>
+<style>
+@font-face { font-family: "Anton"; src: url("Anton-Regular.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "Syncopate"; src: url("Syncopate-Bold.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+:root {
+  --midnight: #05080D; --panel: #0B111A; --line: #1A2431;
+  --moon: #EEF1F5; --chrome: #8A94A3; --ice: #B8CCE0;
+  --sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+html { background: var(--midnight); scroll-behavior: smooth; }
+body { margin: 0; background: var(--midnight); color: var(--moon); font: 15px/1.5 var(--sans); -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+.mono { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--chrome); }
+
+/* Kopf */
+header.top { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 14px clamp(16px, 4vw, 48px); background: rgba(5,8,13,.82); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line); }
+.brand { font-family: "Syncopate", var(--sans); font-weight: 700; font-size: 12px; letter-spacing: .18em; white-space: nowrap; }
+nav.sections { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+nav.sections a { text-decoration: none; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; white-space: nowrap; }
+nav.sections a:hover, nav.sections a.on { border-color: var(--ice); color: var(--moon); }
+
+/* Einstieg */
+.hero { position: relative; height: min(78vh, 760px); min-height: 420px; overflow: hidden; border-bottom: 1px solid var(--line); }
+.hero .bg { position: absolute; inset: -4%; width: 108%; height: 108%; object-fit: cover; object-position: 60% 50%; opacity: .85;
+  animation: drift 40s ease-in-out infinite alternate; }
+@keyframes drift { from { transform: scale(1) translate(0, 0); } to { transform: scale(1.06) translate(-1.5%, 1%); } }
+@media (prefers-reduced-motion: reduce) { .hero .bg { animation: none; } }
+.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(5,8,13,0) 45%, var(--midnight) 100%); }
+.hero .txt { position: absolute; left: clamp(16px, 4vw, 48px); right: clamp(16px, 4vw, 48px); bottom: clamp(20px, 5vw, 56px); z-index: 2; }
+.hero h1 { font-family: "Anton", var(--sans); font-weight: 400; font-size: clamp(56px, 11vw, 160px); line-height: .9; margin: 0 0 14px; letter-spacing: .01em; }
+.hero p { margin: 0; max-width: 560px; color: var(--chrome); }
+
+/* Abschnitte */
+section { padding: clamp(40px, 7vw, 88px) clamp(16px, 4vw, 48px) 0; scroll-margin-top: 64px; }
+.sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-top: 1px solid var(--line); padding-top: 18px; margin-bottom: 22px; }
+.sec-head h2 { font-family: "Anton", var(--sans); font-weight: 400; font-size: clamp(36px, 6vw, 72px); line-height: 1; margin: 0; }
+.h1-de { font-family: "Anton", var(--sans); font-size: clamp(22px, 3.4vw, 44px); line-height: 1; color: var(--ice); margin: 0 0 16px; letter-spacing: .02em; text-transform: uppercase; }
+.h2-en { font-family: "Anton", var(--sans); font-size: clamp(18px, 2.6vw, 30px); line-height: 1.1; color: var(--chrome); margin-top: 6px; text-transform: uppercase; }
+.note .en { color: #5E6876; }
+.sec-head .note { max-width: 520px; color: var(--chrome); margin: 6px 0 0; }
+.filters { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 18px; }
+.filters button { font: inherit; font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--chrome);
+  background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+.filters button.on, .filters button:hover { color: var(--moon); border-color: var(--ice); }
+h3.group { font-family: var(--mono); font-weight: 400; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--ice);
+  margin: 34px 0 12px; display: flex; gap: 10px; align-items: center; }
+h3.group::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+
+/* Raster */
+.grid { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
+.grid.logo { grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr)); }
+.tile { position: relative; margin: 0; background: var(--panel); border: 1px solid var(--line); overflow: hidden; cursor: zoom-in; }
+.tile img, .tile video { display: block; width: 100%; height: 100%; object-fit: cover; aspect-ratio: 16 / 9; background: var(--panel); }
+.tile.vertical img, .tile.vertical video { aspect-ratio: 9 / 16; object-fit: contain; }
+.grid.logo .tile img { object-fit: contain; padding: 18px; aspect-ratio: 4 / 3; }
+.tile figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 22px 10px 8px; font-family: var(--mono); font-size: 10.5px; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--moon); background: linear-gradient(180deg, rgba(5,8,13,0), rgba(5,8,13,.85));
+  opacity: 0; transition: opacity .2s; }
+.tile:hover figcaption, .tile:focus-visible figcaption { opacity: 1; }
+@media (hover: none) { .tile figcaption { opacity: 1; } }
+.tile:focus-visible { outline: 1px solid var(--ice); outline-offset: 2px; }
+.hidden { display: none !important; }
+
+/* Großansicht */
+.lb { position: fixed; inset: 0; z-index: 50; background: var(--midnight); display: none; align-items: center; justify-content: center; padding: 56px 16px 64px; }
+.lb.open { display: flex; }
+.lb img, .lb video { max-width: 100%; max-height: 100%; object-fit: contain; }
+.lb .cap { position: absolute; left: 16px; right: 16px; bottom: 18px; text-align: center; }
+.lb button { position: absolute; background: none; border: 1px solid var(--line); color: var(--moon); width: 44px; height: 44px; border-radius: 999px;
+  font: 18px var(--sans); cursor: pointer; }
+.lb button:hover { border-color: var(--ice); }
+.lb .x { top: 12px; right: 12px; } .lb .prev { left: 12px; top: 50%; } .lb .next { right: 12px; top: 50%; }
+
+footer { padding: 72px clamp(16px, 4vw, 48px) 40px; color: var(--chrome); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+footer a { color: var(--chrome); }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand">SAME MOON</div>
+  <nav class="sections mono" aria-label="Abschnitte / Sections">
+    <a href="#motifs">Motive / Motifs <span id="n-tex"></span></a>
+  </nav>
+</header>
+
+<div class="hero">
+  <img class="bg" src="t-s03-mexico68-finsternis.jpg" alt="">
+  <div class="txt">
+    <div class="mono" style="margin-bottom:10px">Nicolas Julian · Moodboard · Arbeitsstand / Working file</div>
+    <h1>SAME MOON.<br>DIFFERENT CITY.</h1>
+    <div class="h1-de">Gleicher Mond. Andere Stadt.</div>
+    <p>Motive und Texturen für die LED-Show. Erste Show am 19.12.2026.<br>Motifs and textures for the LED show. First show 19.12.2026.</p>
+  </div>
+</div>
+
+<section id="motifs">
+  <div class="sec-head">
+    <div><div class="mono">01</div><h2>Motive &amp; Texturen</h2><div class="h2-en">Motifs &amp; Textures</div></div>
+    <p class="note">Fünfzig LED-Hintergründe: Muster aus der Designgeschichte, ausgeleuchtet in der Same-Moon-Welt aus Mitternacht, Mondweiß, Chrom und Eis.<br><span class="en">Fifty LED backgrounds. Patterns from design history, lit and finished in the Same Moon world: midnight, moon white, chrome, ice.</span></p>
+  </div>
+  <div class="filters" id="f-tex"></div>
+  <div class="grid" id="g-tex"></div>
+</section>
+
+
+<footer class="mono">
+  <span>Arbeitsstand, nicht zur Weitergabe · working moodboard, not for distribution · nicolas julian × alejandro diego · 2026</span>
+  <a href="https://alejandrodiego.de">alejandrodiego.de</a>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Großansicht / Viewer">
+  <button class="x" aria-label="Close">✕</button>
+  <button class="prev" aria-label="Previous">‹</button>
+  <button class="next" aria-label="Next">›</button>
+  <div id="lb-body" style="display:contents"></div>
+  <div class="cap mono" id="lb-cap"></div>
+</div>
+
+<script src="data.js"></script>
+<script>
+(function () {
+  var D = window.DATA, lbList = [], lbIdx = 0;
+  var COMPS = ["Vollmond", "Sichel", "Finsternis", "Flaeche", "Horizont", "Chromring"];
+  var EN = { Vollmond: "Full moon", Sichel: "Crescent", Finsternis: "Eclipse", Flaeche: "Surface", Horizont: "Horizon", Chromring: "Chrome ring" };
+  var CHIP = { All: "Alle / All", Vollmond: "Vollmond / Full moon", Sichel: "Sichel / Crescent", Finsternis: "Finsternis / Eclipse", Flaeche: "Fläche / Surface", Horizont: "Horizont / Horizon", Chromring: "Chromring / Chrome ring", Studies: "Studien / Studies" };
+
+  function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
+  function nice(s) { Object.keys(EN).forEach(function (k) { s = s.replace(new RegExp("\\b" + k + "\\b"), EN[k]); }); var UM = {
+      "Mondlinien ohne Schrift nach Mexico68": "Moon lines", "Rastermond nach Punktraster": "Halftone moon", "Chromstrahlen nach 7UP": "Chrome rays",
+      "Mondkorn nach Besos robados": "Grain moon", "Chromgitter nach Wuerfel 1965": "Chrome grid",
+      "Unmoegliche Koerper": "Impossible bodies", Mexico68: "Op-art lines", Punktraster: "Halftone", Strahlenkranz: "Ray burst", Druckkorn: "Print grain",
+      Wuerfel: "Cubes", Roehren: "Tubes", Dreieckssog: "Triangle pull", Kreisboegen: "Arcs", Labyrinth: "Maze", Punktmatrix: "Dot matrix",
+      Lichtspur: "Light trail", Chromkoerper: "Chrome body", Lichtstraenge: "Light strands", Lichtketten: "Light chains",
+      haeufiger: "häufiger", Seitwaerts: "Seitwärts", gefuellt: "gefüllt", vorlaeufig: "vorläufig" };
+    Object.keys(UM).forEach(function (k) { s = s.split(k).join(UM[k]); }); return s; }
+
+  // Videos nur abspielen, wenn sie zu sehen sind
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      var v = e.target;
+      if (e.isIntersecting) { if (!v.src) v.src = v.dataset.src; v.play().catch(function () {}); }
+      else v.pause();
+    });
+  }, { rootMargin: "200px" });
+
+  function tile(item, kind, list) {
+    var f = el("figure", "tile" + (item.vertical ? " vertical" : ""));
+    f.tabIndex = 0;
+    var m;
+    if (kind === "video") {
+      m = el("video"); m.muted = true; m.loop = true; m.playsInline = true; m.preload = "none";
+      m.setAttribute("muted", ""); m.setAttribute("playsinline", "");
+      m.poster = item.poster; m.dataset.src = item.src; io.observe(m);
+    } else {
+      m = el("img"); m.loading = "lazy"; m.decoding = "async"; m.src = item.thumb || item.src; m.alt = item.label;
+    }
+    f.appendChild(m);
+    f.appendChild(el("figcaption", null, (item.nr ? item.nr + " · " : "") + nice(item.label)));
+    function open() { lbList = list.filter(function (x) { return !x._el || !x._el.classList.contains("hidden"); }); lbIdx = lbList.indexOf(item); show(); }
+    f.addEventListener("click", open);
+    f.addEventListener("keydown", function (e) { if (e.key === "Enter") open(); });
+    item._el = f; item._kind = kind;
+    return f;
+  }
+
+  // 01 Motive
+  var gt = document.getElementById("g-tex"), ft = document.getElementById("f-tex");
+  D.textures.forEach(function (t) {
+    var c = COMPS.filter(function (k) { return t.label.indexOf(k) > -1; })[0];
+    t.comp = c || "Studies";
+    if (c) t.label = t.label.replace(" " + c, " · " + c);
+    gt.appendChild(tile(t, "img", D.textures));
+  });
+  ["All"].concat(COMPS, ["Studies"]).forEach(function (c, i) {
+    var b = el("button", i ? "" : "on", CHIP[c] || c);
+    b.addEventListener("click", function () {
+      [].forEach.call(ft.children, function (x) { x.classList.remove("on"); }); b.classList.add("on");
+      D.textures.forEach(function (t) { t._el.classList.toggle("hidden", c !== "All" && t.comp !== c); });
+    });
+    ft.appendChild(b);
+  });
+
+
+  document.getElementById("n-tex").textContent = D.textures.length;
+
+  // Großansicht
+  var lb = document.getElementById("lb"), body = document.getElementById("lb-body"), cap = document.getElementById("lb-cap");
+  function show() {
+    var it = lbList[lbIdx]; body.innerHTML = "";
+    var m;
+    if (it._kind === "video") { m = el("video"); m.src = it.src; m.autoplay = true; m.loop = true; m.muted = true; m.controls = true; m.playsInline = true; }
+    else { m = el("img"); m.src = it.src; m.alt = it.label; }
+    body.appendChild(m);
+    cap.textContent = (it.nr ? it.nr + " · " : "") + nice(it.label) + "  ·  " + (lbIdx + 1) + " / " + lbList.length;
+    lb.classList.add("open"); document.body.style.overflow = "hidden";
+  }
+  function close() { lb.classList.remove("open"); body.innerHTML = ""; document.body.style.overflow = ""; }
+  function step(d) { lbIdx = (lbIdx + d + lbList.length) % lbList.length; show(); }
+  lb.querySelector(".x").onclick = close;
+  lb.querySelector(".prev").onclick = function (e) { e.stopPropagation(); step(-1); };
+  lb.querySelector(".next").onclick = function (e) { e.stopPropagation(); step(1); };
+  lb.addEventListener("click", function (e) { if (e.target === lb) close(); });
+  document.addEventListener("keydown", function (e) {
+    if (!lb.classList.contains("open")) return;
+    if (e.key === "Escape") close(); else if (e.key === "ArrowRight") step(1); else if (e.key === "ArrowLeft") step(-1);
+  });
+
+  // aktiver Abschnitt in der Leiste
+  var links = document.querySelectorAll("nav.sections a");
+  var so = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) links.forEach(function (a) { a.classList.toggle("on", a.getAttribute("href") === "#" + e.target.id); }); });
+  }, { rootMargin: "-40% 0px -55% 0px" });
+  document.querySelectorAll("section").forEach(function (s) { so.observe(s); });
+})();
+</script>
+</body>
+</html>
