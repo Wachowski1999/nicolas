@@ -1,6 +1,21 @@
 window.DATA = {
  "logo": [],
- "motion": [],
+ "motion": [
+  {
+   "src": "m-chrom-schriftzug-varianten-sauber-und-unsauber-nj-sauber-gestapelt-loop-whatsapp.mp4",
+   "poster": "m-chrom-schriftzug-varianten-sauber-und-unsauber-nj-sauber-gestapelt-loop-whatsapp.jpg",
+   "label": "NJ sauber gestapelt Loop",
+   "group": "Chrom-Schriftzug / Varianten sauber und unsauber",
+   "vertical": false
+  },
+  {
+   "src": "m-chrom-schriftzug-varianten-sauber-und-unsauber-nj-unsauber-gestapelt-loop-whatsapp.mp4",
+   "poster": "m-chrom-schriftzug-varianten-sauber-und-unsauber-nj-unsauber-gestapelt-loop-whatsapp.jpg",
+   "label": "NJ unsauber gestapelt Loop",
+   "group": "Chrom-Schriftzug / Varianten sauber und unsauber",
+   "vertical": false
+  }
+ ],
  "textures": [
   {
    "src": "t-s01-mexico68-vollmond.jpg",

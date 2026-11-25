@@ -90,6 +90,7 @@ footer a { color: var(--chrome); }
   <div class="brand">SAME MOON</div>
   <nav class="sections mono" aria-label="Abschnitte / Sections">
     <a href="#motifs">Motive / Motifs <span id="n-tex"></span></a>
+    <a href="#motion">Loops <span id="n-mot"></span></a>
   </nav>
 </header>
 
@@ -98,7 +99,7 @@ footer a { color: var(--chrome); }
   <div class="txt">
     <div class="mono" style="margin-bottom:10px">Nicolas Julian · Moodboard · Arbeitsstand / Working file</div>
     <h1>SAME MOON.<br>DIFFERENT CITY.</h1>
-    <p>Motive und Texturen für die LED-Show. Erste Show am 19.12.2026.<br>Motifs and textures for the LED show. First show 19.12.2026.</p>
+    <p>Motive, Texturen und Loops für die LED-Show. Erste Show am 19.12.2026.<br>Motifs, textures and loops for the LED show. First show 19.12.2026.</p>
   </div>
 </div>
 
@@ -111,6 +112,14 @@ footer a { color: var(--chrome); }
   <div class="grid" id="g-tex"></div>
 </section>
 
+
+<section id="motion">
+  <div class="sec-head">
+    <div><div class="mono">02</div><h2>Loops &amp; Bewegung</h2><div class="h2-en">Loops &amp; Motion</div></div>
+    <p class="note">Loops und LED-Tests. Vorschauen, fürs Web verkleinert.<br><span class="en">Loops and LED tests. Previews, compressed for the web.</span></p>
+  </div>
+  <div id="g-mot"></div>
+</section>
 
 <footer class="mono">
   <span>Arbeitsstand, nicht zur Weitergabe · working moodboard, not for distribution · nicolas julian × alejandro diego · 2026</span>
@@ -190,6 +199,19 @@ footer a { color: var(--chrome); }
   });
 
 
+  // 02 Loops, nach Ordnern gruppiert
+  function grouped(items, host, kind, gridCls) {
+    var groups = {};
+    items.forEach(function (it) { (groups[it.group] = groups[it.group] || []).push(it); });
+    Object.keys(groups).sort().forEach(function (g) {
+      host.appendChild(el("h3", "group", nice(g)));
+      var grid = el("div", "grid " + (gridCls || ""));
+      groups[g].forEach(function (it) { grid.appendChild(tile(it, kind, items)); });
+      host.appendChild(grid);
+    });
+  }
+  grouped(D.motion, document.getElementById("g-mot"), "video");
+  document.getElementById("n-mot").textContent = D.motion.length;
   document.getElementById("n-tex").textContent = D.textures.length;
 
   // Großansicht
