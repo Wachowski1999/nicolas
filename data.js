@@ -2,6 +2,307 @@ window.DATA = {
  "logo": [],
  "motion": [
   {
+   "src": "m-neues-logo-syncopate-nj-neu-halbmond-gestapelt-loop-whatsapp.mp4",
+   "poster": "m-neues-logo-syncopate-nj-neu-halbmond-gestapelt-loop-whatsapp.jpg",
+   "label": "NJ NEU Halbmond gestapelt Loop",
+   "group": "Neues Logo Syncopate",
+   "vertical": false
+  },
+  {
+   "src": "m-neues-logo-syncopate-nj-neu-halbmond-nebeneinander-loop-whatsapp.mp4",
+   "poster": "m-neues-logo-syncopate-nj-neu-halbmond-nebeneinander-loop-whatsapp.jpg",
+   "label": "NJ NEU Halbmond nebeneinander Loop",
+   "group": "Neues Logo Syncopate",
+   "vertical": false
+  },
+  {
+   "src": "m-neues-logo-syncopate-nj-neu-normales-o-gestapelt-loop-whatsapp.mp4",
+   "poster": "m-neues-logo-syncopate-nj-neu-normales-o-gestapelt-loop-whatsapp.jpg",
+   "label": "NJ NEU normales O gestapelt Loop",
+   "group": "Neues Logo Syncopate",
+   "vertical": false
+  },
+  {
+   "src": "m-neues-logo-syncopate-nj-neu-normales-o-nebeneinander-loop-whatsapp.mp4",
+   "poster": "m-neues-logo-syncopate-nj-neu-normales-o-nebeneinander-loop-whatsapp.jpg",
+   "label": "NJ NEU normales O nebeneinander Loop",
+   "group": "Neues Logo Syncopate",
+   "vertical": false
+  },
+  {
+   "src": "m-same-moon-anton-same-moon-anton-gestapelt-loop-negativ-look.mp4",
+   "poster": "m-same-moon-anton-same-moon-anton-gestapelt-loop-negativ-look.jpg",
+   "label": "SAME MOON Anton gestapelt Loop Negativ Look",
+   "group": "SAME MOON Anton",
+   "vertical": false
+  },
+  {
+   "src": "m-same-moon-anton-same-moon-anton-nebeneinander-loop-negativ-look.mp4",
+   "poster": "m-same-moon-anton-same-moon-anton-nebeneinander-loop-negativ-look.jpg",
+   "label": "SAME MOON Anton nebeneinander Loop Negativ Look",
+   "group": "SAME MOON Anton",
+   "vertical": false
+  },
+  {
+   "src": "m-loop-v5-nj-mond-loop-16-9.mp4",
+   "poster": "m-loop-v5-nj-mond-loop-16-9.jpg",
+   "label": "NJ Mond Loop 16 9",
+   "group": "Loop v5",
+   "vertical": false
+  },
+  {
+   "src": "m-loop-v5-nj-mond-loop-9-16.mp4",
+   "poster": "m-loop-v5-nj-mond-loop-9-16.jpg",
+   "label": "NJ Mond Loop 9 16",
+   "group": "Loop v5",
+   "vertical": true
+  },
+  {
+   "src": "m-syncopate-sy-nicolas-julian-loop-16-9-ohne-footage.mp4",
+   "poster": "m-syncopate-sy-nicolas-julian-loop-16-9-ohne-footage.jpg",
+   "label": "SY NICOLAS JULIAN Loop 16 9 ohne Footage",
+   "group": "Syncopate",
+   "vertical": false
+  },
+  {
+   "src": "m-syncopate-sy-nicolas-julian-whatsapp-negativ.mp4",
+   "poster": "m-syncopate-sy-nicolas-julian-whatsapp-negativ.jpg",
+   "label": "SY NICOLAS JULIAN Negativ",
+   "group": "Syncopate",
+   "vertical": false
+  },
+  {
+   "src": "m-syncopate-sy-nicolas-loop-16-9-ohne-footage.mp4",
+   "poster": "m-syncopate-sy-nicolas-loop-16-9-ohne-footage.jpg",
+   "label": "SY NICOLAS Loop 16 9 ohne Footage",
+   "group": "Syncopate",
+   "vertical": false
+  },
+  {
+   "src": "m-syncopate-sy-nicolas-whatsapp-negativ.mp4",
+   "poster": "m-syncopate-sy-nicolas-whatsapp-negativ.jpg",
+   "label": "SY NICOLAS Negativ",
+   "group": "Syncopate",
+   "vertical": false
+  },
+  {
+   "src": "m-syncopate-sy-one-moon-loop-16-9-ohne-footage.mp4",
+   "poster": "m-syncopate-sy-one-moon-loop-16-9-ohne-footage.jpg",
+   "label": "SY ONE MOON Loop 16 9 ohne Footage",
+   "group": "Syncopate",
+   "vertical": false
+  },
+  {
+   "src": "m-syncopate-sy-one-moon-whatsapp-negativ.mp4",
+   "poster": "m-syncopate-sy-one-moon-whatsapp-negativ.jpg",
+   "label": "SY ONE MOON Negativ",
+   "group": "Syncopate",
+   "vertical": false
+  },
+  {
+   "src": "m-syncopate-sy-same-moon-glitch-whatsapp.mp4",
+   "poster": "m-syncopate-sy-same-moon-glitch-whatsapp.jpg",
+   "label": "SY SAME MOON Glitch",
+   "group": "Syncopate",
+   "vertical": false
+  },
+  {
+   "src": "m-syncopate-sy-same-moon-glitch-whatsapp-sw.mp4",
+   "poster": "m-syncopate-sy-same-moon-glitch-whatsapp-sw.jpg",
+   "label": "SY SAME MOON Glitch SW",
+   "group": "Syncopate",
+   "vertical": false
+  },
+  {
+   "src": "m-syncopate-sy-same-moon-loop-16-9-ohne-footage.mp4",
+   "poster": "m-syncopate-sy-same-moon-loop-16-9-ohne-footage.jpg",
+   "label": "SY SAME MOON Loop 16 9 ohne Footage",
+   "group": "Syncopate",
+   "vertical": false
+  },
+  {
+   "src": "m-syncopate-sy-same-moon-whatsapp-negativ.mp4",
+   "poster": "m-syncopate-sy-same-moon-whatsapp-negativ.jpg",
+   "label": "SY SAME MOON Negativ",
+   "group": "Syncopate",
+   "vertical": false
+  },
+  {
+   "src": "m-syncopate-sy-same-moon-einzeilig-glitch-whatsapp.mp4",
+   "poster": "m-syncopate-sy-same-moon-einzeilig-glitch-whatsapp.jpg",
+   "label": "SY SAME MOON einzeilig Glitch",
+   "group": "Syncopate",
+   "vertical": false
+  },
+  {
+   "src": "m-syncopate-sy-same-moon-einzeilig-glitch-whatsapp-sw.mp4",
+   "poster": "m-syncopate-sy-same-moon-einzeilig-glitch-whatsapp-sw.jpg",
+   "label": "SY SAME MOON einzeilig Glitch SW",
+   "group": "Syncopate",
+   "vertical": false
+  },
+  {
+   "src": "m-syncopate-glitch-ruhig-same-moon-einzeilig-loop-whatsapp.mp4",
+   "poster": "m-syncopate-glitch-ruhig-same-moon-einzeilig-loop-whatsapp.jpg",
+   "label": "SAME MOON einzeilig Loop",
+   "group": "Syncopate / Glitch ruhig",
+   "vertical": false
+  },
+  {
+   "src": "m-syncopate-glitch-ruhig-same-moon-einzeilig-loop-whatsapp-sw.mp4",
+   "poster": "m-syncopate-glitch-ruhig-same-moon-einzeilig-loop-whatsapp-sw.jpg",
+   "label": "SAME MOON einzeilig Loop SW",
+   "group": "Syncopate / Glitch ruhig",
+   "vertical": false
+  },
+  {
+   "src": "m-syncopate-glitch-ruhig-same-moon-gestapelt-loop-whatsapp.mp4",
+   "poster": "m-syncopate-glitch-ruhig-same-moon-gestapelt-loop-whatsapp.jpg",
+   "label": "SAME MOON gestapelt Loop",
+   "group": "Syncopate / Glitch ruhig",
+   "vertical": false
+  },
+  {
+   "src": "m-syncopate-glitch-ruhig-same-moon-gestapelt-loop-whatsapp-sw.mp4",
+   "poster": "m-syncopate-glitch-ruhig-same-moon-gestapelt-loop-whatsapp-sw.jpg",
+   "label": "SAME MOON gestapelt Loop SW",
+   "group": "Syncopate / Glitch ruhig",
+   "vertical": false
+  },
+  {
+   "src": "m-syncopate-glitch-dezent-same-moon-einzeilig-loop-whatsapp.mp4",
+   "poster": "m-syncopate-glitch-dezent-same-moon-einzeilig-loop-whatsapp.jpg",
+   "label": "SAME MOON einzeilig Loop",
+   "group": "Syncopate / Glitch dezent",
+   "vertical": false
+  },
+  {
+   "src": "m-syncopate-glitch-dezent-same-moon-gestapelt-loop-whatsapp.mp4",
+   "poster": "m-syncopate-glitch-dezent-same-moon-gestapelt-loop-whatsapp.jpg",
+   "label": "SAME MOON gestapelt Loop",
+   "group": "Syncopate / Glitch dezent",
+   "vertical": false
+  },
+  {
+   "src": "m-ideen-ohne-seitwaerts-glitch-idee-a-schnitt.mp4",
+   "poster": "m-ideen-ohne-seitwaerts-glitch-idee-a-schnitt.jpg",
+   "label": "Idee A Schnitt",
+   "group": "Ideen ohne Seitwaerts-Glitch",
+   "vertical": false
+  },
+  {
+   "src": "m-ideen-ohne-seitwaerts-glitch-idee-b-schattenlinie.mp4",
+   "poster": "m-ideen-ohne-seitwaerts-glitch-idee-b-schattenlinie.jpg",
+   "label": "Idee B Schattenlinie",
+   "group": "Ideen ohne Seitwaerts-Glitch",
+   "vertical": false
+  },
+  {
+   "src": "m-ideen-ohne-seitwaerts-glitch-idee-c-fenster.mp4",
+   "poster": "m-ideen-ohne-seitwaerts-glitch-idee-c-fenster.jpg",
+   "label": "Idee C Fenster",
+   "group": "Ideen ohne Seitwaerts-Glitch",
+   "vertical": false
+  },
+  {
+   "src": "m-ideen-ohne-seitwaerts-glitch-kombi-a-b-c-b-155bpm-15s-whatsapp.mp4",
+   "poster": "m-ideen-ohne-seitwaerts-glitch-kombi-a-b-c-b-155bpm-15s-whatsapp.jpg",
+   "label": "Kombi A B C B 155bpm 15s",
+   "group": "Ideen ohne Seitwaerts-Glitch",
+   "vertical": false
+  },
+  {
+   "src": "m-same-moon-v2-enger-one-moon-loop-16-9-ohne-footage.mp4",
+   "poster": "m-same-moon-v2-enger-one-moon-loop-16-9-ohne-footage.jpg",
+   "label": "ONE MOON Loop 16 9 ohne Footage",
+   "group": "SAME MOON / v2 enger",
+   "vertical": false
+  },
+  {
+   "src": "m-same-moon-v2-enger-one-moon-whatsapp-negativ.mp4",
+   "poster": "m-same-moon-v2-enger-one-moon-whatsapp-negativ.jpg",
+   "label": "ONE MOON Negativ",
+   "group": "SAME MOON / v2 enger",
+   "vertical": false
+  },
+  {
+   "src": "m-same-moon-v2-enger-same-moon-loop-16-9-ohne-footage.mp4",
+   "poster": "m-same-moon-v2-enger-same-moon-loop-16-9-ohne-footage.jpg",
+   "label": "SAME MOON Loop 16 9 ohne Footage",
+   "group": "SAME MOON / v2 enger",
+   "vertical": false
+  },
+  {
+   "src": "m-same-moon-v2-enger-same-moon-whatsapp-negativ.mp4",
+   "poster": "m-same-moon-v2-enger-same-moon-whatsapp-negativ.jpg",
+   "label": "SAME MOON Negativ",
+   "group": "SAME MOON / v2 enger",
+   "vertical": false
+  },
+  {
+   "src": "m-loop-v6-mondflug-nj-mond-loop-16-9-mit-mondflug.mp4",
+   "poster": "m-loop-v6-mondflug-nj-mond-loop-16-9-mit-mondflug.jpg",
+   "label": "NJ Mond Loop 16 9 mit Mondflug",
+   "group": "Loop v6 Mondflug",
+   "vertical": false
+  },
+  {
+   "src": "m-loop-v6-mondflug-nj-mond-loop-whatsapp.mp4",
+   "poster": "m-loop-v6-mondflug-nj-mond-loop-whatsapp.jpg",
+   "label": "NJ Mond Loop",
+   "group": "Loop v6 Mondflug",
+   "vertical": false
+  },
+  {
+   "src": "m-loop-v6-mondflug-nj-mond-loop-whatsapp-negativ.mp4",
+   "poster": "m-loop-v6-mondflug-nj-mond-loop-whatsapp-negativ.jpg",
+   "label": "NJ Mond Loop Negativ",
+   "group": "Loop v6 Mondflug",
+   "vertical": false
+  },
+  {
+   "src": "m-negativ-look-nj-neu-halbmond-gestapelt-loop-negativ-look.mp4",
+   "poster": "m-negativ-look-nj-neu-halbmond-gestapelt-loop-negativ-look.jpg",
+   "label": "NJ NEU Halbmond gestapelt Loop Negativ Look",
+   "group": "Negativ-Look",
+   "vertical": false
+  },
+  {
+   "src": "m-negativ-look-nj-neu-halbmond-nebeneinander-loop-negativ-look.mp4",
+   "poster": "m-negativ-look-nj-neu-halbmond-nebeneinander-loop-negativ-look.jpg",
+   "label": "NJ NEU Halbmond nebeneinander Loop Negativ Look",
+   "group": "Negativ-Look",
+   "vertical": false
+  },
+  {
+   "src": "m-negativ-look-nj-neu-normales-o-gestapelt-loop-negativ-look.mp4",
+   "poster": "m-negativ-look-nj-neu-normales-o-gestapelt-loop-negativ-look.jpg",
+   "label": "NJ NEU normales O gestapelt Loop Negativ Look",
+   "group": "Negativ-Look",
+   "vertical": false
+  },
+  {
+   "src": "m-negativ-look-nj-neu-normales-o-nebeneinander-loop-negativ-look.mp4",
+   "poster": "m-negativ-look-nj-neu-normales-o-nebeneinander-loop-negativ-look.jpg",
+   "label": "NJ NEU normales O nebeneinander Loop Negativ Look",
+   "group": "Negativ-Look",
+   "vertical": false
+  },
+  {
+   "src": "m-negativ-look-same-moon-einzeilig-loop-negativ-look.mp4",
+   "poster": "m-negativ-look-same-moon-einzeilig-loop-negativ-look.jpg",
+   "label": "SAME MOON einzeilig Loop Negativ Look",
+   "group": "Negativ-Look",
+   "vertical": false
+  },
+  {
+   "src": "m-negativ-look-same-moon-gestapelt-loop-negativ-look.mp4",
+   "poster": "m-negativ-look-same-moon-gestapelt-loop-negativ-look.jpg",
+   "label": "SAME MOON gestapelt Loop Negativ Look",
+   "group": "Negativ-Look",
+   "vertical": false
+  },
+  {
    "src": "m-chrom-schriftzug-varianten-sauber-und-unsauber-nj-sauber-gestapelt-loop-whatsapp.mp4",
    "poster": "m-chrom-schriftzug-varianten-sauber-und-unsauber-nj-sauber-gestapelt-loop-whatsapp.jpg",
    "label": "NJ sauber gestapelt Loop",
