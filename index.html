@@ -118,7 +118,7 @@ footer a { color: var(--chrome); }
 <section id="motifs">
   <div class="sec-head">
     <div><div class="mono">01</div><h2>Motive &amp; Texturen</h2><div class="h2-en">Motifs &amp; Textures</div></div>
-    <p class="note">Fünfzig LED-Hintergründe: Muster aus der Designgeschichte, ausgeleuchtet in der Same-Moon-Welt aus Mitternacht, Mondweiß, Chrom und Eis.<br><span class="en">Fifty LED backgrounds. Patterns from design history, lit and finished in the Same Moon world: midnight, moon white, chrome, ice.</span></p>
+    <p class="note">77 LED-Hintergründe: Grunge-Motive mit Röntgen, Kopierkorn, Collagerissen und Schädeln, dazu Muster aus der Designgeschichte, ausgeleuchtet in der Same-Moon-Welt aus Mitternacht, Mondweiß, Chrom und Eis.<br><span class="en">77 LED backgrounds. Grunge motifs with X-ray, photocopy grain, torn collage and skulls, plus patterns from design history, lit and finished in the Same Moon world: midnight, moon white, chrome, ice.</span></p>
   </div>
   <div class="filters" id="f-tex"></div>
   <div class="grid" id="g-tex"></div>
@@ -152,7 +152,7 @@ footer a { color: var(--chrome); }
   var D = window.DATA, lbList = [], lbIdx = 0;
   var COMPS = ["Vollmond", "Sichel", "Finsternis", "Flaeche", "Horizont", "Chromring"];
   var EN = { Vollmond: "Full moon", Sichel: "Crescent", Finsternis: "Eclipse", Flaeche: "Surface", Horizont: "Horizon", Chromring: "Chrome ring" };
-  var CHIP = { All: "Alle / All", Vollmond: "Vollmond / Full moon", Sichel: "Sichel / Crescent", Finsternis: "Finsternis / Eclipse", Flaeche: "Fläche / Surface", Horizont: "Horizont / Horizon", Chromring: "Chromring / Chrome ring", Studies: "Studien / Studies" };
+  var CHIP = { All: "Alle / All", Vollmond: "Vollmond / Full moon", Sichel: "Sichel / Crescent", Finsternis: "Finsternis / Eclipse", Flaeche: "Fläche / Surface", Horizont: "Horizont / Horizon", Chromring: "Chromring / Chrome ring", Studies: "Studien / Studies", Grunge: "Grunge" };
 
   function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
   function nice(s) { Object.keys(EN).forEach(function (k) { s = s.replace(new RegExp("\\b" + k + "\\b"), EN[k]); }); var UM = {
@@ -160,7 +160,7 @@ footer a { color: var(--chrome); }
       "Mondkorn nach Besos robados": "Grain moon", "Chromgitter nach Wuerfel 1965": "Chrome grid",
       "Unmoegliche Koerper": "Impossible bodies", Mexico68: "Op-art lines", Punktraster: "Halftone", Strahlenkranz: "Ray burst", Druckkorn: "Print grain",
       Wuerfel: "Cubes", Roehren: "Tubes", Dreieckssog: "Triangle pull", Kreisboegen: "Arcs", Labyrinth: "Maze", Punktmatrix: "Dot matrix",
-      Lichtspur: "Light trail", Chromkoerper: "Chrome body", Lichtstraenge: "Light strands", Lichtketten: "Light chains",
+      Lichtspur: "Light trail", Roentgen: "X-ray", Kopierkorn: "Photocopy grain", Collageriss: "Torn collage", Chromkegel: "Chrome cone", Sternenrauschen: "Star noise", Filmkratzer: "Film scratches", Kopiermond: "Copied moon", Chromschaedel: "Chrome skull", Mondschaedel: "Moon skull", Kopierschaedel: "Copied skull", Schaedel: "Skull", Lichtkranz: "Corona", Mondaufgang: "Moonrise", Chromkoerper: "Chrome body", Lichtstraenge: "Light strands", Lichtketten: "Light chains",
       haeufiger: "häufiger", Seitwaerts: "Seitwärts", gefuellt: "gefüllt", vorlaeufig: "vorläufig" };
     Object.keys(UM).forEach(function (k) { s = s.split(k).join(UM[k]); }); return s; }
 
@@ -201,11 +201,11 @@ footer a { color: var(--chrome); }
     if (c) t.label = t.label.replace(" " + c, " · " + c);
     gt.appendChild(tile(t, "img", D.textures));
   });
-  ["All"].concat(COMPS, ["Studies"]).forEach(function (c, i) {
+  ["All"].concat(D.textures.some(function (t) { return t.grunge; }) ? ["Grunge"] : [], COMPS, ["Studies"]).forEach(function (c, i) {
     var b = el("button", i ? "" : "on", CHIP[c] || c);
     b.addEventListener("click", function () {
       [].forEach.call(ft.children, function (x) { x.classList.remove("on"); }); b.classList.add("on");
-      D.textures.forEach(function (t) { t._el.classList.toggle("hidden", c !== "All" && t.comp !== c); });
+      D.textures.forEach(function (t) { t._el.classList.toggle("hidden", c === "Grunge" ? !t.grunge : (c !== "All" && t.comp !== c)); });
     });
     ft.appendChild(b);
   });
